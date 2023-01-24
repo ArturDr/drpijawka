@@ -12,27 +12,32 @@ get_header();
 <div class="container">
     <div class="row">
         <div class="col">
-            <p>O mnie</p>
+            <p>O MNIE</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <p>Ceny</p>
+            <p>CENNIK</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <p>Przed zabiegiem</p>
+            <p>PRZED ZABIEGIEM</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <p>W trakcie zabiegu</p>
+            <p>WTRAKCIE ZABIEGU</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <p>Po zabiegu</p>
+            <p>PO ZABIEGU</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>KOTNTAKT</p>
         </div>
     </div>
 </div>
