@@ -10,23 +10,16 @@
  */
 
 ?>
+<div class="container">
+	<footer>
+		<div class="row">
+			<div class="col">
+				<p><?php echo date('Y') ?> &#169; <a href="http://robekartur.pl"> Robek Artur</a></p>
+			</div>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dr-pijawka' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'dr-pijawka' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'dr-pijawka' ), 'dr-pijawka', '<a href="http://underscores.me/">Artur Robek</a>' );
-				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
 
