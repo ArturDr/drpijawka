@@ -10,17 +10,17 @@
 get_header();
 ?>
 <div class="container">
-    <div class="row">
+    <div class="row" id="about-me">
         <div class="col">
             <p>O MNIE</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="offer">
         <div class="col">
             <p>CENNIK</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="procedure">
         <div class="col">
             <p>PRZED ZABIEGIEM</p>
         </div>
@@ -35,7 +35,7 @@ get_header();
             <p>PO ZABIEGU</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="contact">
         <div class="col">
             <p>KOTNTAKT</p>
         </div>

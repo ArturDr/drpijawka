@@ -1,2 +1,14 @@
-.pijawka-menu {
-  color: red; }
+html {
+  font-size: 100%; }
+  html body .top-section {
+    background: #9786b5;
+    background: linear-gradient(135deg, #9786b5 0%, #271744 100%); }
+    html body .top-section .pijawka-menu .navbar-nav a {
+      font-family: "Lato";
+      color: #F2FAB3;
+      font-weight: 600;
+      font-size: 1.2em; }
+    html body .top-section .hero-section .container {
+      padding-bottom: 5em; }
+      html body .top-section .hero-section .container .row .hero-col {
+        margin: 3em 0; }

@@ -1,5 +1,35 @@
 @import "_variables.scss";
 
-.pijawka-menu {
-    color: $red;
+html {
+    font-size: 100%;
+    body {
+        //top section
+        .top-section {
+            background: rgb(151, 134, 181);
+            background: linear-gradient(135deg, rgba(151, 134, 181, 1) 0%, rgba(39, 23, 68, 1) 100%);
+            //menu
+            .pijawka-menu {
+                .navbar-nav {
+                    a {
+                        font-family: $font;
+                        color: $main-grey;
+                        font-weight: 600;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+
+            //hero section
+            .hero-section {
+                .container {
+                    .row {
+                        .hero-col {
+                            margin: 3em 0;
+                        }
+                    }
+                    padding-bottom: 5em;
+                }
+            }
+        }
+    }
 }
