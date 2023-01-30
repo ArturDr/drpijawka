@@ -1,5 +1,7 @@
 html {
   font-size: 100%; }
+  html .page {
+    margin-bottom: 0; }
   html body h1 {
     font-family: "Lato";
     margin: 1em 0; }
