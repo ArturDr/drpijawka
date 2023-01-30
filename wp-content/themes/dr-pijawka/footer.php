@@ -10,13 +10,13 @@
  */
 
 ?>
-<div class="container">
+
+<div class="container-fluid pijawka-footer">
 	<footer>
-		<div class="row">
+		<div class="row text-center">
 			<div class="col">
 				<p><?php echo date('Y') ?> &#169; <a href="http://robekartur.pl"> Robek Artur</a></p>
 			</div>
-
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div>
