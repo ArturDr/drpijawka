@@ -25,38 +25,41 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div class="top-section">
-		<div class="container-fluid pijawka-menu shadow">
-			<nav class="navbar navbar-expand-md">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/logo-menu.png" alt="Dr Pijawka" width="133" height="40">
-					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="#about-me">O MNIE</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#offer">CENNIK</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#procedure">ZABIEG</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">KONTAKT</a>
-							</li>
-					</div>
+		<div class="menu-container">
+			<nav class="navbar">
+				<a class="navbar-logo" href="#">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-menu.png" alt="Dr Pijawka" width="133" height="40">
+				</a>
+				<div class="navbar-list">
+					<a class="nav-link" href="#about-me">O MNIE</a>
+					<a class="nav-link" href="#about-leeches">O PIJAWKACH</a>
+					<a class="nav-link" href="#procedure">ZABIEG</a>
+					<a class="nav-link" href="#offer">CENNIK</a>
+					<a class="nav-link" href="#contact">KONTAKT</a>
 				</div>
 			</nav>
+			<nav class="navbar-mobile">
+				<a class="navbar-logo" href="#">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-menu.png" alt="Dr Pijawka" width="133" height="40">
+				</a>
+				<div class="burger">
+					<i class="fa-solid fa-bars menu-icon"></i>
+					<i class="fa-solid fa-xmark menu-xmark"></i>
+				</div>
+			</nav>
+			<div class="navbar-list-mobile">
+					<a class="nav-link" href="#about-me">O MNIE</a>
+					<a class="nav-link" href="#about-leeches">O PIJAWKACH</a>
+					<a class="nav-link" href="#procedure">ZABIEG</a>
+					<a class="nav-link" href="#offer">CENNIK</a>
+					<a class="nav-link" href="#contact">KONTAKT</a>
+			</div>
 		</div>
 		<div class="hero-section">
 			<div class="container">
-				<div class="row align-items-center flex-column-reverse flex-md-row">
-					<div class="col-12 col-md-4 text-center hero-col"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/logo-text.png" alt="Logo Dr Pijawka" width="266" height="80"></div>
-					<div class="col-12 col-md-8 text-center hero-col"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/sloik.png" alt="Słój z pijawkami" width="380" height="525"></div>
+				<div class="row">
+					<div class="col-1"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-text.png" alt="Logo Dr Pijawka" width="266" height="80"></div>
+					<div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/images/sloik.png" alt="Słój z pijawkami" width="380" height="525"></div>
 				</div>
 			</div>
 		</div>

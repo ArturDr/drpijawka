@@ -16,17 +16,10 @@ get_header();
             <p><?php echo esc_html(get_field('o_mnie')); ?></p>
         </div>
     </div>
-    <div class="row" id="offer">
+    <div class="row" id="about-leeches">
         <div class="col">
-            <h1>CENNIK</h1>
-            <ul>
-            <?php
-            $i = 1;
-            while(get_field('usluga_'.$i) && get_field('cena_'.$i)) {
-                ?><li><?php echo esc_html(get_field('usluga_'.$i))?> - <?php echo esc_html(get_field('cena_'.$i))?></li><?php
-            $i++;}
-            $i = 1;?>
-            </ul>
+            <h1>O PIJAWKACH</h1>
+            <p><?php echo esc_html(get_field('o_pijawkach')); ?></p>
         </div>
     </div>
     <div class="row" id="procedure">
@@ -66,6 +59,19 @@ get_header();
             $i++;}
             $i = 1;?>
             </ol>
+        </div>
+    </div>
+    <div class="row" id="offer">
+        <div class="col">
+            <h1>CENNIK</h1>
+            <ul>
+            <?php
+            $i = 1;
+            while(get_field('usluga_'.$i) && get_field('cena_'.$i)) {
+                ?><li><?php echo esc_html(get_field('usluga_'.$i))?> - <?php echo esc_html(get_field('cena_'.$i))?></li><?php
+            $i++;}
+            $i = 1;?>
+            </ul>
         </div>
     </div>
     <div class="row" id="contact">
