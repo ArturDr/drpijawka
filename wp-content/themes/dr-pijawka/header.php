@@ -48,19 +48,15 @@
 				</div>
 			</nav>
 			<div class="navbar-list-mobile">
-					<a class="nav-link" href="#about-me">O MNIE</a>
-					<a class="nav-link" href="#about-leeches">O PIJAWKACH</a>
-					<a class="nav-link" href="#procedure">ZABIEG</a>
-					<a class="nav-link" href="#offer">CENNIK</a>
-					<a class="nav-link" href="#contact">KONTAKT</a>
+				<a class="nav-link" href="#about-me">O MNIE</a>
+				<a class="nav-link" href="#about-leeches">O PIJAWKACH</a>
+				<a class="nav-link" href="#procedure">ZABIEG</a>
+				<a class="nav-link" href="#offer">CENNIK</a>
+				<a class="nav-link" href="#contact">KONTAKT</a>
 			</div>
 		</div>
 		<div class="hero-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-1"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-text.png" alt="Logo Dr Pijawka" width="266" height="80"></div>
-					<div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/images/sloik.png" alt="Słój z pijawkami" width="380" height="525"></div>
-				</div>
-			</div>
+			<div class="col-1"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-text.png" alt="Logo Dr Pijawka" width="266" height="80"></div>
+			<div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/images/sloik.png" alt="Słój z pijawkami" width="380" height="525"></div>
 		</div>
 	</div>
