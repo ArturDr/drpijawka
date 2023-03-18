@@ -9,7 +9,23 @@ html {
         margin: 0;
         h1 {
             font-family: $font;
-            margin: 1em 0;
+            color: $black;
+            font-size: 3em;
+        }
+        h2 {
+            font-family: $font;
+            color: $black;
+            font-size: 2em;
+        }
+        h3 {
+            font-family: $font;
+            color: $main-grey;
+            font-size: 1.5em;
+        }
+        p {
+            font-family: $font;
+            color: $black;
+            font-size: 1em;
         }
 
         //top section
@@ -119,7 +135,83 @@ html {
             }
         }
 
-        //about-me
+        //main-container
+        .main-container {
+            display: grid;
+            grid-template-columns: 10% repeat(6, 1fr) 10%;
+            grid-template-rows: 200px repeat(5, 800px);
+            .title {
+                grid-row: 1 / 2;
+                grid-column: 2 / 8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: solid 3px $dark-red;
+            }
+            #about-me, #about-leeches, #about-leeches-img, #offer, #contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #about-me {
+                grid-row: 2 / 3;
+                grid-column: 2 / 8;
+            }
+            #about-leeches-img {
+                grid-row: 3 / 4;
+                grid-column: 2 / 5;
+            }
+            #about-leeches {
+                grid-row: 3 / 4;
+                grid-column: 5 / 8;
+            }
+            .procedure-1, .procedure-2, .procedure-3 {
+                opacity: 0;
+                transition: .5s linear;
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                align-items: center;
+                height: 700px;
+                background: $dark-red;
+                color: $main-grey;
+                padding: 15px;
+                border-radius: 8px;
+                ol {
+                    margin: 0;
+                    li {
+                        margin: 5px 0;
+                    }
+                }
+                &.active {
+                    opacity: 1;
+                }
+            }
+            .procedure-1 {
+                grid-row: 4 / 5;
+                grid-column: 2 / 4;
+                margin: 0 5px;
+            }
+            .procedure-2 {
+                grid-row: 4 / 5;
+                grid-column: 4 / 6;
+                margin: 30px 5px 0;
+            }
+            .procedure-3 {
+                grid-row: 4 / 5;
+                grid-column: 6 / 8;
+                margin: 60px 5px 0;
+            }
+            #offer {
+                grid-row: 5 / 6;
+                grid-column: 2 / 8;
+            }
+            #contact {
+                grid-row: 6 / 7;
+                grid-column: 2 / 8;
+            }
+        }
 
         //footer
         .pijawka-footer {
