@@ -18,62 +18,64 @@ get_header();
         <h2>O MNIE</h2>
         <p><?php echo esc_html(get_field('o_mnie')); ?></p>
     </div>
-    <div class="row" id="about-leeches">
-        <h2>O PIJAWKACH</h2>
-        <p><?php echo esc_html(get_field('o_pijawkach')); ?></p>
+    <div class="leeches-back">
+        <div class="row" id="about-leeches">
+            <h2>O PIJAWKACH</h2>
+            <p><?php echo esc_html(get_field('o_pijawkach')); ?></p>
+        </div>
+        <div class="row" id="about-leeches-img">
+            <?php $fotoLeech = get_field('pijawki_zdjecie') ?>
+            <img src="<?php echo esc_html($fotoLeech['url']); ?>" alt="<?php echo esc_attr($fotoLeech['alt']); ?>">
+        </div>
     </div>
-    <div class="row" id="about-leeches-img">
-        <?php $fotoLeech = get_field('pijawki_zdjecie')?>
-        <img src="<?php echo esc_html($fotoLeech['url']); ?>" alt="<?php echo esc_attr($fotoLeech['alt']); ?>">
+    <div class="procedure-1" id="procedure">
+        <h3>PRZED ZABIEGIEM</h3>
+        <ol>
+            <?php
+            $i = 1;
+            while (get_field('przed_zabiegiem_' . $i)) {
+            ?>
+                <li>
+                    <?php echo esc_html(get_field('przed_zabiegiem_' . $i)) ?>
+                </li>
+            <?php
+                $i++;
+            }
+            $i = 1; ?>
+        </ol>
     </div>
-        <div class="procedure-1" id="procedure">
-            <h3>PRZED ZABIEGIEM</h3>
-            <ol>
-                <?php
-                $i = 1;
-                while (get_field('przed_zabiegiem_' . $i)) {
-                ?>
+    <div class="procedure-2">
+        <h3>W TRAKCIE ZABIEGU</h3>
+        <ol>
+            <?php
+            $i = 1;
+            while (get_field('w_trakcie_' . $i)) {
+            ?>
                 <li>
-                <?php echo esc_html(get_field('przed_zabiegiem_' . $i)) ?>
+                    <?php echo esc_html(get_field('w_trakcie_' . $i)) ?>
                 </li>
-                <?php
-                    $i++;
-                }
-                $i = 1; ?>
-            </ol>
-        </div>
-        <div class="procedure-2">
-            <h3>W TRAKCIE ZABIEGU</h3>
-            <ol>
-                <?php
-                $i = 1;
-                while (get_field('w_trakcie_' . $i)) {
-                ?>
+            <?php
+                $i++;
+            }
+            $i = 1; ?>
+        </ol>
+    </div>
+    <div class="procedure-3">
+        <h3>PO ZABIEGU</h3>
+        <ol>
+            <?php
+            $i = 1;
+            while (get_field('po_zabiegu_' . $i)) {
+            ?>
                 <li>
-                <?php echo esc_html(get_field('w_trakcie_' . $i)) ?>
+                    <?php echo esc_html(get_field('po_zabiegu_' . $i)) ?>
                 </li>
-                <?php
-                    $i++;
-                }
-                $i = 1; ?>
-            </ol>
-        </div>
-        <div class="procedure-3">
-            <h3>PO ZABIEGU</h3>
-            <ol>
-                <?php
-                $i = 1;
-                while (get_field('po_zabiegu_' . $i)) {
-                ?>
-                <li>
-                <?php echo esc_html(get_field('po_zabiegu_' . $i)) ?>
-                </li>
-                <?php
-                    $i++;
-                }
-                $i = 1; ?>
-            </ol>
-        </div>
+            <?php
+                $i++;
+            }
+            $i = 1; ?>
+        </ol>
+    </div>
     <div class="row" id="offer">
         <h2>CENNIK</h2>
         <ul>
@@ -81,11 +83,11 @@ get_header();
             $i = 1;
             while (get_field('usluga_' . $i) && get_field('cena_' . $i)) {
             ?>
-            <li>
-            <?php echo esc_html(get_field('usluga_' . $i)) ?> - <?php echo esc_html(get_field('cena_' . $i)) ?>
-            </li>
+                <li>
+                    <?php echo esc_html(get_field('usluga_' . $i)) ?> - <?php echo esc_html(get_field('cena_' . $i)) ?>
+                </li>
             <?php
-            $i++;
+                $i++;
             }
             $i = 1; ?>
         </ul>

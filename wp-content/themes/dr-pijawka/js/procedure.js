@@ -1,8 +1,8 @@
 /**
  * File procedure.js.
  *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
+ * Edit procedure visibility in main-section.
+ *
  */
 
 const procedure1 = document.querySelector('.procedure-1');
