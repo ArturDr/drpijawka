@@ -84,9 +84,9 @@ html {
                     background: $lihgt-purple;
                     background: linear-gradient(45deg, $lihgt-purple 0%, $dark-purple-menu 100%);
                     top: 58px;
-                    left: -75%;
+                    left: -100%;
                     display: flex;
-                    width: 75%;
+                    width: 100%;
                     flex-direction: column;
                     transition: 0.5s linear;
                     .nav-link {
@@ -95,7 +95,7 @@ html {
                         font-weight: 600;
                         font-size: 1.2em;
                         color: $dark-red;
-                        padding: 5px 15px;
+                        padding: 10px 25px;
                     }
                 }
             }
@@ -288,6 +288,10 @@ html {
             background: $lihgt-purple;
             background: linear-gradient(135deg, $lihgt-purple 0%, $dark-purple 100%);
             font-family: $font;
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
             p {
                 color: $main-grey;
                 margin: 0;
@@ -295,12 +299,12 @@ html {
                     text-decoration: none;
                     color: $main-grey;
                     &:hover {
-                        color: $main-green;
+                        color: $dark-red;
                     }
                     &:visited {
                         color: $main-grey;
                         &:hover {
-                            color: $main-green;
+                            color: $dark-red;
                         }
                     }
                 }
@@ -367,7 +371,7 @@ html {
                             }
                         }
                         .navbar-list-mobile {
-                            left: 25%;
+                            left: 0%;
                             .nav-link {
                                 &:visited {
                                     color: $dark-red;
@@ -405,6 +409,61 @@ html {
                             height: 95%;
                         }
                     }
+                }
+            }
+            //main-section
+            .main-container {
+                display: grid;
+                grid-template-columns: 5% 1fr 5%;
+                grid-template-rows: 200px 800px repeat(2, 500px) repeat(4, 740px) 400px;
+                .title {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    h1 {
+                        font-size: 2.5em;
+                    }
+                }
+                #about-me {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                }
+                .leeches-back {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-columns: 5% 1fr 5%;
+                    grid-column: 1 / 4;
+                    grid-row: 3 / 5;
+                    #about-leeches {
+                        grid-row: 2 / 3;
+                        grid-column: 2 /3;
+                    }
+                    #about-leeches-img {
+                        grid-row: 1 / 2;
+                        grid-column: 2 /3;
+                    }
+                }
+                .procedure-1, .procedure-2, .procedure-3 {
+                    margin: 20px 0;
+                }
+                .procedure-1 {
+                    grid-column: 2 / 3;
+                    grid-row: 5 / 6;
+                }
+                .procedure-2 {
+                    grid-column: 2 / 3;
+                    grid-row: 6 / 7;
+                }
+                .procedure-3 {
+                    grid-column: 2 / 3;
+                    grid-row: 7 / 8;
+                }
+                #offer {
+                    grid-column: 2 / 3;
+                    grid-row: 8 / 9;
+                }
+                #contact {
+                    grid-column: 2 / 3;
+                    grid-row: 9 / 10;
                 }
             }
         }

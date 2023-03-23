@@ -65,9 +65,9 @@ html {
           background: #9786b5;
           background: linear-gradient(45deg, #9786b5 0%, rgba(39, 23, 68, 0.75) 100%);
           top: 58px;
-          left: -75%;
+          left: -100%;
           display: flex;
-          width: 75%;
+          width: 100%;
           flex-direction: column;
           transition: 0.5s linear; }
           html body .top-section .menu-container .navbar-list-mobile .nav-link {
@@ -76,7 +76,7 @@ html {
             font-weight: 600;
             font-size: 1.2em;
             color: #57102B;
-            padding: 5px 15px; }
+            padding: 10px 25px; }
       html body .top-section .hero-section {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -230,7 +230,11 @@ html {
     html body .pijawka-footer {
       background: #9786b5;
       background: linear-gradient(135deg, #9786b5 0%, #271744 100%);
-      font-family: "Lato"; }
+      font-family: "Lato";
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      align-items: center; }
       html body .pijawka-footer p {
         color: #E5E5E5;
         margin: 0; }
@@ -238,11 +242,11 @@ html {
           text-decoration: none;
           color: #E5E5E5; }
           html body .pijawka-footer p a:hover {
-            color: #9ba54b; }
+            color: #57102B; }
           html body .pijawka-footer p a:visited {
             color: #E5E5E5; }
             html body .pijawka-footer p a:visited:hover {
-              color: #9ba54b; }
+              color: #57102B; }
     @media only screen and (max-width: 768px) {
       html body .top-section {
         grid-template-columns: 5% 1fr 5%;
@@ -292,7 +296,7 @@ html {
                 html body .top-section .menu-container.active .navbar-mobile .burger .menu-icon {
                   display: none; }
             html body .top-section .menu-container.active .navbar-list-mobile {
-              left: 25%; }
+              left: 0%; }
               html body .top-section .menu-container.active .navbar-list-mobile .nav-link:visited {
                 color: #57102B;
                 text-decoration: none; }
@@ -318,4 +322,45 @@ html {
             justify-content: center;
             align-items: center; }
             html body .top-section .hero-section .col-2 img {
-              height: 95%; } }
+              height: 95%; }
+      html body .main-container {
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 200px 800px repeat(2, 500px) repeat(4, 740px) 400px; }
+        html body .main-container .title {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2; }
+          html body .main-container .title h1 {
+            font-size: 2.5em; }
+        html body .main-container #about-me {
+          grid-column: 2 / 3;
+          grid-row: 2 / 3; }
+        html body .main-container .leeches-back {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 5% 1fr 5%;
+          grid-column: 1 / 4;
+          grid-row: 3 / 5; }
+          html body .main-container .leeches-back #about-leeches {
+            grid-row: 2 / 3;
+            grid-column: 2 /3; }
+          html body .main-container .leeches-back #about-leeches-img {
+            grid-row: 1 / 2;
+            grid-column: 2 /3; }
+        html body .main-container .procedure-1, html body .main-container .procedure-2, html body .main-container .procedure-3 {
+          margin: 20px 0; }
+        html body .main-container .procedure-1 {
+          grid-column: 2 / 3;
+          grid-row: 5 / 6; }
+        html body .main-container .procedure-2 {
+          grid-column: 2 / 3;
+          grid-row: 6 / 7; }
+        html body .main-container .procedure-3 {
+          grid-column: 2 / 3;
+          grid-row: 7 / 8; }
+        html body .main-container #offer {
+          grid-column: 2 / 3;
+          grid-row: 8 / 9; }
+        html body .main-container #contact {
+          grid-column: 2 / 3;
+          grid-row: 9 / 10; } }

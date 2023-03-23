@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,17 +12,12 @@
 
 ?>
 
-<div class="container-fluid pijawka-footer">
-	<footer>
-		<div class="row text-center">
-			<div class="col">
-				<p><?php echo date('Y') ?> &#169; <a href="http://robekartur.pl"> Robek Artur</a></p>
-			</div>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<div class="pijawka-footer">
+	<p><?php echo date('Y') ?> &#169; <a href="https://robekartur.pl"> Robek Artur</a></p>
 </div>
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
