@@ -8,11 +8,16 @@
 	const burger = document.querySelector( '.burger' );
 	const menuMobile =  document.querySelector('.menu-container');
 	const navLink =  document.querySelector('.navbar-list-mobile');
+	const navLogo = document.querySelector('.navbar-logo')
 
 	burger.addEventListener('click', function(){
 		menuMobile.classList.toggle('active');
 	});
 
 	navLink.addEventListener('click', function(){
+		menuMobile.classList.remove('active');
+	});
+
+	navLogo.addEventListener('click', function(){
 		menuMobile.classList.remove('active');
 	});

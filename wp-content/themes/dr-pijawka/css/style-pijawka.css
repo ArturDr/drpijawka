@@ -105,6 +105,16 @@ html {
             height: 90%;
             width: auto;
             object-fit: contain; }
+    html body .main-404 {
+      display: grid;
+      grid-template-columns: 10% 1fr 10%;
+      grid-template-rows: 500px; }
+      html body .main-404 .title {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
     html body .main-container {
       display: grid;
       grid-template-columns: 10% repeat(6, 1fr) 10%;
@@ -130,7 +140,8 @@ html {
       html body .main-container #about-me {
         grid-row: 2 / 3;
         grid-column: 2 / 8; }
-        html body .main-container #about-me h2, html body .main-container #about-me p {
+        html body .main-container #about-me h2,
+        html body .main-container #about-me p {
           text-align: center; }
         html body .main-container #about-me p {
           font-size: 1.5em; }
@@ -151,7 +162,8 @@ html {
         html body .main-container .leeches-back #about-leeches {
           grid-row: 1 / 2;
           grid-column: 5 / 8; }
-          html body .main-container .leeches-back #about-leeches h2, html body .main-container .leeches-back #about-leeches p {
+          html body .main-container .leeches-back #about-leeches h2,
+          html body .main-container .leeches-back #about-leeches p {
             color: #E5E5E5;
             text-align: center; }
       html body .main-container .procedure-1,
@@ -199,7 +211,7 @@ html {
         background: #7b8430;
         background: linear-gradient(135deg, #7b8430 0%, #4f2259 100%);
         border-radius: 8px;
-        transition: .2s linear; }
+        transition: 0.2s linear; }
         html body .main-container #offer h2 {
           color: #E5E5E5; }
         html body .main-container #offer ul {
@@ -323,6 +335,16 @@ html {
             align-items: center; }
             html body .top-section .hero-section .col-2 img {
               height: 95%; }
+      html body .main-404 {
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 500px; }
+        html body .main-404 .title {
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
       html body .main-container {
         display: grid;
         grid-template-columns: 5% 1fr 5%;
@@ -347,7 +369,9 @@ html {
           html body .main-container .leeches-back #about-leeches-img {
             grid-row: 1 / 2;
             grid-column: 2 /3; }
-        html body .main-container .procedure-1, html body .main-container .procedure-2, html body .main-container .procedure-3 {
+        html body .main-container .procedure-1,
+        html body .main-container .procedure-2,
+        html body .main-container .procedure-3 {
           margin: 20px 0; }
         html body .main-container .procedure-1 {
           grid-column: 2 / 3;

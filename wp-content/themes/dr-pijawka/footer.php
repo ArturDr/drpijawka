@@ -13,7 +13,7 @@
 ?>
 
 <div class="pijawka-footer">
-	<p><?php echo date('Y') ?> &#169; <a href="https://robekartur.pl"> Robek Artur</a></p>
+	<p><?php echo date('Y') ?> &#169; drpijawka.pl | Created by <a href="https://robekartur.pl"> Robek Artur</a></p>
 </div>
 
 <?php wp_footer(); ?>

@@ -11,7 +11,6 @@ const procedure3 = document.querySelector('.procedure-3');
 
 window.addEventListener("scroll", function () {
     let y = window.scrollY;
-    console.log(y);
     if (window.screen.width > 768) {
         if (y >= 2000) {
             procedure1.classList.add('active');

@@ -27,19 +27,19 @@
 	<div class="top-section">
 		<div class="menu-container">
 			<nav class="navbar">
-				<a class="navbar-logo" href="#">
+				<a class="navbar-logo" href="<?php echo get_page_uri(); ?>/">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-menu.png" alt="Dr Pijawka" width="133" height="40">
 				</a>
 				<div class="navbar-list">
-					<a class="nav-link" href="#about-me">O MNIE</a>
-					<a class="nav-link" href="#about-leeches">O PIJAWKACH</a>
-					<a class="nav-link" href="#procedure">ZABIEG</a>
-					<a class="nav-link" href="#offer">CENNIK</a>
-					<a class="nav-link" href="#contact">KONTAKT</a>
+					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-me">O MNIE</a>
+					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-leeches">O PIJAWKACH</a>
+					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#procedure">ZABIEG</a>
+					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#offer">CENNIK</a>
+					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#contact">KONTAKT</a>
 				</div>
 			</nav>
 			<nav class="navbar-mobile">
-				<a class="navbar-logo" href="#">
+				<a class="navbar-logo" href="<?php echo get_page_uri(); ?>/">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-menu.png" alt="Dr Pijawka" width="133" height="40">
 				</a>
 				<div class="burger">
@@ -48,11 +48,11 @@
 				</div>
 			</nav>
 			<div class="navbar-list-mobile">
-				<a class="nav-link" href="#about-me">O MNIE</a>
-				<a class="nav-link" href="#about-leeches">O PIJAWKACH</a>
-				<a class="nav-link" href="#procedure">ZABIEG</a>
-				<a class="nav-link" href="#offer">CENNIK</a>
-				<a class="nav-link" href="#contact">KONTAKT</a>
+				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-me">O MNIE</a>
+				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-leeches">O PIJAWKACH</a>
+				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#procedure">ZABIEG</a>
+				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#offer">CENNIK</a>
+				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#contact">KONTAKT</a>
 			</div>
 		</div>
 		<div class="hero-section">
