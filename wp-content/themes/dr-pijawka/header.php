@@ -32,7 +32,7 @@
 				</a>
 				<div class="navbar-list">
 					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-me">O MNIE</a>
-					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-leeches">O PIJAWKACH</a>
+					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#leeches-back">O PIJAWKACH</a>
 					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#procedure">ZABIEG</a>
 					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#offer">CENNIK</a>
 					<a class="nav-link" href="<?php echo get_page_uri(); ?>/#contact">KONTAKT</a>
@@ -49,7 +49,7 @@
 			</nav>
 			<div class="navbar-list-mobile">
 				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-me">O MNIE</a>
-				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#about-leeches">O PIJAWKACH</a>
+				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#leeches-back">O PIJAWKACH</a>
 				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#procedure">ZABIEG</a>
 				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#offer">CENNIK</a>
 				<a class="nav-link" href="<?php echo get_page_uri(); ?>/#contact">KONTAKT</a>

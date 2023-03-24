@@ -18,7 +18,7 @@ get_header();
         <h2>O MNIE</h2>
         <p><?php echo esc_html(get_field('o_mnie')); ?></p>
     </div>
-    <div class="leeches-back">
+    <div id="leeches-back">
         <div class="row" id="about-leeches">
             <h2>O PIJAWKACH</h2>
             <p><?php echo esc_html(get_field('o_pijawkach')); ?></p>
